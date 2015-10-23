@@ -1,0 +1,123 @@
+<!--
+  #%L
+  distributed-chat-service
+  %%
+  Copyright (C) 2015 Zanclus Consulting
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<html>
+  <head>
+    <title>Distributed Chat Service</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>부트스트랩 101 템플릿</title>
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="vertxbus.js"></script>
+    <style>
+      .inset {
+        box-shadow: inset 0 0 4px #000000;
+        -moz-box-shadow: inset 0 0 4px #000000;
+        -webkit-box-shadow: inset 0 0 4px #000000;
+        width: 400px;
+        border-width: 4px;
+        padding: 5px;
+      }
+
+      input.inset {
+        height: 40px;
+      }
+
+      div.inset {
+        height: 500px;
+        white-space: pre-wrap
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <script>
+      var eb = new vertx.EventBus("/eventbus/");
+      eb.onopen = function () {
+        eb.registerHandler("chat.to.client", function (msg) {
+          $('#chat').append(msg + "\n");
+        });
+      };
+
+      function send(event) {
+      <!-- event.keyCode에서 주의 & 이 부분 응용 -->
+  <!--  if (event.keyCode == 13 || event.which == 13) { -->
+          var message = $('#input').val();
+          if (message.length > 0) {
+            console.log($('#input'));
+            eb.publish("chat.to.server", message);
+            $('#input').val("");
+    <!--  }-->
+        }
+      }
+<!--
+      $(document).ready();
+      $('#btn').click();
+-->
+    </script>
+
+
+    <h1>Chatting Room</h1>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+
+   <div id="chat" class="inset"></div>
+   <input id="input" type="text" class="inset">
+   <button id="btn" type="submit" class="btn btn-default" onclick="send(event)">Send</button>
+
+
+
+<!--
+        <div class="panel panel-default col-">
+          <div class="panel-body">
+            Basic panel example
+          </div>
+        </div>
+
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputMsg" onkeydown="send(event)" class="inset" placeholder="typing the message" aria-describedby="sizing-addon1">
+          </div>
+          <button type="submit" class="btn btn-default">Send</button>
+        </form>
+
+    -->
+
+      </body>
+    </html>

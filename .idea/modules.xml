@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/core-examples/core-examples.iml" filepath="$PROJECT_DIR$/core-examples/core-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples-utils/examples-utils.iml" filepath="$PROJECT_DIR$/examples-utils/examples-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-examples.iml" filepath="$PROJECT_DIR$/vertx-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-examples/web-examples.iml" filepath="$PROJECT_DIR$/web-examples/web-examples.iml" />
+    </modules>
+  </component>
+</project>
