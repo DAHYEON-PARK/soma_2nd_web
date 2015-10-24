@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="198eda66-8fb9-4584-8d94-8801b8c0f0ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vertx-examples.iws" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32173914">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.24347825">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -699,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32173914">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.24347825">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
