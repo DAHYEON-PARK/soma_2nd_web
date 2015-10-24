@@ -44,8 +44,8 @@ public class Server extends AbstractVerticle {
     EventBus eb = vertx.eventBus();
     eb.consumer("chat.to.server").handler(message -> {
 
-      String str = "" + message.body();
-      eb.publish("chat.to.client", str);
+      System.out.println("* "+message.body());
+      //eb.publish("chat.to.client", message.body());
     });
 
   }

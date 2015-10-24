@@ -19,6 +19,7 @@ public class ExampleRunner {
 
   public static void runJavaExample(String prefix, Class clazz, VertxOptions options) {
     String exampleDir = prefix + clazz.getPackage().getName().replace(".", "/");
+    System.out.println(exampleDir);
     runExample(exampleDir, clazz.getName(), options);
   }
 
