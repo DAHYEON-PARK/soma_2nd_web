@@ -45,7 +45,7 @@ public class Server extends AbstractVerticle {
     eb.consumer("chat.to.server").handler(message -> {
 
       System.out.println("* "+message.body());
-      //eb.publish("chat.to.client", message.body());
+      eb.publish("chat.to.client", message.body());
     });
 
   }
