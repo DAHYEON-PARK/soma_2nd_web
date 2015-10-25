@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
+
     <title>Soma 2nd Project</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,20 @@
 
      <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
      <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
-    <script src="vertxbus.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+     <!-- Javascript Libraries -->
+     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+     <script src="js/functions.js"></script>
+
+     <script src="vertxbus.js"></script>
+
  </head>
 
  <body class="login-content">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
     <script>
       var eb = new vertx.EventBus("/eventbus/");
@@ -30,19 +38,62 @@
       eb.onopen = function () {
         eb.registerHandler("chat.to.client", function (msg) {
             console.log(msg);
-            if(msg)
-            location.replace("main.html");
+            if(msg == 'ok')
+                location.replace("main.html");
+            else
+                alert('Login Fail');
         });
       };
 
       function send() {
-          var message = $('#user_email').val()+"/"+$('#user_pw').val();
+          var message = $('#login_user_email').val()+"/"+$('#login_user_pw').val();
           console.log(message);
           if (message.length > 0) {
             eb.publish("chat.to.server", message);
-            $('#user_email').val("");
-            $('#user_pw').val("");
+            $('#login_user_email').val("");
+            $('#login_user_pw').val("");
           }
+      }
+
+      var id, pw, repw;
+
+      function ajaxSend() {
+        console.log(id);
+        console.log(pw);
+
+        $.ajax({
+            url:'http://133.130.113.101:7010/user/join?user_id=' +id+ '&user_pw=' +pw+ '&gcm_id=default&device_id=default',
+            type:'post',
+            timeout:1000,
+            dataType:'json',
+
+            error:function(){
+                alert('Error');
+            },
+
+            success:function(obj){
+                alert('success'+obj);
+                location.replace("main.html");
+            }
+        });
+      }
+
+      function join() {
+        id = $('#join_user_email').val();
+        pw = $('#join_user_pw').val();
+        repw = $('#join_user_repw').val();
+        ajaxSend();
+      }
+
+      function login() {
+        id = $('#login_user_email').val();
+        pw = $('#login_user_pw').val();
+        ajaxSend();
+      }
+
+      function findpw() {
+        id = $('#forgot_user_id').val();
+        ajaxSend();
       }
     </script>
 
@@ -51,14 +102,14 @@
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
              <div class="fg-line">
-                 <input id="user_email" type="text" class="form-control" placeholder="E-mail Address">
+                 <input id="login_user_email" type="text" class="form-control" placeholder="E-mail Address">
              </div>
          </div>
 
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-male"></i></span>
              <div class="fg-line">
-                 <input id="user_pw" type="password" class="form-control" placeholder="Password">
+                 <input id="login_user_pw" type="password" class="form-control" placeholder="Password">
              </div>
          </div>
 
@@ -77,27 +128,27 @@
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
              <div class="fg-line">
-                 <input type="text" class="form-control" placeholder="E-mail Address">
+                 <input id="join_user_email" type="text" class="form-control" placeholder="E-mail Address">
              </div>
          </div>
 
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-male"></i></span>
              <div class="fg-line">
-                 <input type="password" class="form-control" placeholder="Password">
+                 <input id="join_user_pw" type="password" class="form-control" placeholder="Password">
              </div>
          </div>
 
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
              <div class="fg-line">
-                 <input type="text" class="form-control" placeholder="Password Again">
+                 <input id="join_user_repw" type="text" class="form-control" placeholder="Password Again">
              </div>
          </div>
 
          <div class="clearfix"></div>
 
-         <a href="" class="btn btn-login bgm-lime btn-float"><i class="zmdi zmdi-arrow-forward"></i></a>
+         <button class="btn btn-login bgm-lime btn-float" onclick="join()"><i class="zmdi zmdi-arrow-forward"></i></button>
 
          <ul class="login-navigation">
              <li data-block="#l-login" class="bgm-amber">Login</li>
@@ -112,23 +163,17 @@
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
              <div class="fg-line">
-                 <input type="text" class="form-control" placeholder="Email Address">
+                 <input id="forgot_user_id" type="text" class="form-control" placeholder="E-mail Address">
              </div>
          </div>
 
-         <a href="" class="btn btn-login bgm-lime btn-float"><i class="zmdi zmdi-arrow-forward"></i></a>
+         <button class="btn btn-login bgm-lime btn-float" onclick="findpw()"><i class="zmdi zmdi-arrow-forward"></i></button>
 
          <ul class="login-navigation">
              <li data-block="#l-login" class="bgm-amber">Login</li>
              <li data-block="#l-register" class="bgm-red">Register</li>
          </ul>
      </div>
-
-     <!-- Javascript Libraries -->
-     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
-     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
-     <script src="js/functions.js"></script>
 
  </body>
 </html>

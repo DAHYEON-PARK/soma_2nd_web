@@ -45,15 +45,17 @@ public class Server extends AbstractVerticle {
     eb.consumer("chat.to.server").handler(message -> {
 
       String[] str = ((String)message.body()).split("/");
-      String user_id = str[0];
-      String user_pw = str[1];
-      System.out.println("user_id : " + user_id);
-      System.out.println("user_pw : " + user_pw);
 
-      if(user_id != "" && user_pw != "")
-        eb.publish("chat.to.client", "ok");
-      else
+      if(str.length == 0){
         eb.publish("chat.to.client", "no");
+      }else {
+        String user_id = str[0];
+        String user_pw = str[1];
+        System.out.println("user_id : " + user_id);
+        System.out.println("user_pw : " + user_pw);
+
+        eb.publish("chat.to.client", "ok");
+      }
     });
 
   }
