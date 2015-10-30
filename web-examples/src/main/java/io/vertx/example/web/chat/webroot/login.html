@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
  <head>
-
     <title>Soma 2nd Project</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,73 +26,90 @@
      <script src="js/functions.js"></script>
 
      <script src="vertxbus.js"></script>
-
+     <script src="js/wraptalk.js"></script>
  </head>
 
  <body class="login-content">
 
     <script>
-      var eb = new vertx.EventBus("/eventbus/");
 
-      eb.onopen = function () {
-        eb.registerHandler("chat.to.client", function (msg) {
-            console.log(msg);
-            if(msg == 'ok')
-                location.replace("main.html");
-            else
-                alert('Login Fail');
+        $(document).ready(function(){
+            // get val into url parameter (?id=val)
+            console.log('type='+getLocationParameter("type"));
+            //document.location = 'main.html?type='+getLocationParameter("type");
         });
-      };
-
-      function send() {
-          var message = $('#login_user_email').val()+"/"+$('#login_user_pw').val();
-          console.log(message);
-          if (message.length > 0) {
-            eb.publish("chat.to.server", message);
-            $('#login_user_email').val("");
-            $('#login_user_pw').val("");
-          }
-      }
 
       var id, pw, repw;
-
-      function ajaxSend() {
-        console.log(id);
-        console.log(pw);
-
-        $.ajax({
-            url:'http://133.130.113.101:7010/user/join?user_id=' +id+ '&user_pw=' +pw+ '&gcm_id=default&device_id=default',
-            type:'post',
-            timeout:1000,
-            dataType:'json',
-
-            error:function(){
-                alert('Error');
-            },
-
-            success:function(obj){
-                alert('success'+obj);
-                location.replace("main.html");
-            }
-        });
-      }
 
       function join() {
         id = $('#join_user_email').val();
         pw = $('#join_user_pw').val();
         repw = $('#join_user_repw').val();
-        ajaxSend();
+
+        console.log('Join : user id = '+id);
+        console.log('Join : user pw = '+pw);
+        console.log('Join : user repw = '+repw);
+
+        if(pw == repw){
+            $.ajax({
+                url:'http://133.130.113.101:7010/user/join?user_id=' +id+ '&user_pw=' +pw,
+                type:'post',
+                timeout:1000,
+                dataType:'json',
+
+                error:function(){
+                    alert('Network Error');
+                },
+
+                success:function(obj){
+                    if(obj.result_code == 0){
+                        alert('Return to Login Page.');
+                    }else if(obj.result_code == -1){
+                        alert(obj.result_msg);
+                    }
+                }
+            });
+        } else {
+            alert('Different with password and re-password.');
+        }
       }
 
       function login() {
         id = $('#login_user_email').val();
         pw = $('#login_user_pw').val();
-        ajaxSend();
+
+        console.log('Login : user id = '+id);
+        console.log('Login : user pw = '+pw);
+
+        $.ajax({
+            url:'http://133.130.113.101:7010/user/login?user_id=' +id+ '&user_pw=' +pw+ '&gcm_id=default&device_id=default',
+            type:'post',
+            timeout:1000,
+            dataType:'json',
+
+            error:function(){
+                alert('Network Error');
+            },
+
+            success:function(obj){
+                if(obj.result_code == 0){
+                    g_token = obj.token;
+                    user_id = id;
+                    // what is different with setUserId(id) and above.
+                    location.replace("main.html");
+                }else if(obj.result_code == -1){
+                    alert(obj.result_msg);
+                }
+            }
+        });
       }
 
       function findpw() {
         id = $('#forgot_user_id').val();
-        ajaxSend();
+
+        console.log('Find PW : user id = '+id);
+
+        // ajax - server request & response
       }
     </script>
 
@@ -115,7 +131,7 @@
 
          <div class="clearfix"></div>
 
-         <button class="btn btn-login bgm-lime btn-float" onclick="send()"><i class="zmdi zmdi-arrow-forward"></i></button>
+         <button class="btn btn-login bgm-lime btn-float" onclick="login()"><i class="zmdi zmdi-arrow-forward"></i></button>
 
          <ul class="login-navigation">
              <li data-block="#l-register" class="bgm-red">Register</li>
@@ -142,7 +158,7 @@
          <div class="input-group m-b-20">
              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
              <div class="fg-line">
-                 <input id="join_user_repw" type="text" class="form-control" placeholder="Password Again">
+                 <input id="join_user_repw" type="password" class="form-control" placeholder="Password Again">
              </div>
          </div>
 

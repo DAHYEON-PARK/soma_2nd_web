@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/wraptalk.js"></script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 
             <!-- title -->
             <li class="logo hidden-xs">
-                <a href="index.html">My Katok Project</a>
+                <a href="index.html">Wrap Talk</a>
             </li>
         </ul>
     </header>
@@ -46,6 +46,72 @@
         <li><a href="#categories">Categroies</a></li>
     </ol>
 -->
+
+    <script>
+        $(document).ready(function(){
+
+             console.log('hello='+getLocationParameter("type"));
+            //document.location = 'main.html?type='+getLocationParameter("type");
+        });
+
+
+
+        function getUserTable() {
+            $.ajax({
+                url:,
+                type:'get',
+                timeout:1000,
+                dataType:'json',
+
+                error:function(){
+                    alert('Network Error');
+                },
+
+                success:function(obj){
+                    alert('success' + obj);
+                    location.replace("main.html");
+                }
+            });
+        }
+
+        function getListApp() {
+            $.ajax({
+                url:'http://133.130.113.101:7010/user/listApp?token=' + userToken,
+                type:'get',
+                timeout:1000,
+                dataType:'json',
+
+                error:function(){
+                    alert('Error');
+                },
+
+                success:function(obj){
+                    alert('success' + obj);
+                    location.replace("main.html");
+                }
+            });
+        }
+
+        function getListChannel() {
+            $.ajax({
+                url:'http://133.130.113.101:7010/user/listChannel?token=' + userToken,
+                type:'get',
+                timeout:1000,
+                dataType:'json',
+
+                error:function(){
+                    alert('Error');
+                },
+
+                success:function(obj){
+                    alert('success' + obj);
+                    location.replace("main.html");
+                }
+            });
+        }
+
+    </script>
+
     <ul id="tabs" class="nav tab-nav" data-tabs="tabs">
         <li class="active"><a href="#users" data-toggle="tab">Users</a></li>
         <li><a href="#applications" data-toggle="tab">Applications</a></li>
@@ -59,6 +125,11 @@
                     <h2>Users' Tables <small>Manage the user information.</small></h2>
                 </div>
 
+
+                <button class="btn btn-default btn-icon-text waves-effect"><i class="zmdi zmdi-refresh"></i> Sync</button>
+
+                <button class="btn btn-success" onclick="getUserTable()">Update Table</button>
+
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -69,6 +140,7 @@
                                 <th>User Device ID</th>
                                 <th>User GCM Key ID</th>
                                 <th>User Join Date</th>
+                                <th> </th>
                             </tr>
                         </thead>
 
@@ -80,6 +152,7 @@
                                 <td>@makinton</td>
                                 <td>Ducky</td>
                                 <td>2015.02.12</td>
+                                <button class="btn bgm-cyan btn-icon waves-effect waves-circle waves-float"><i class="zmdi zmdi-close"></i></button>
                             </tr>
                             <tr>
                                 <td>2</td>
