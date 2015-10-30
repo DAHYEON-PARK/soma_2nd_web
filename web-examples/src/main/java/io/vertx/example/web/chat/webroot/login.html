@@ -52,7 +52,7 @@
 
         if(pw == repw){
             $.ajax({
-                url:'http://133.130.113.101:7010/user/join?user_id=' +id+ '&user_pw=' +pw,
+                url:'http://133.130.113.101:7010/user/join?user_id=' +id+ '&user_pw=' +pw+ '&gcm_id=default&device_id=default',
                 type:'post',
                 timeout:1000,
                 dataType:'json',

@@ -48,17 +48,17 @@
 -->
 
     <script>
-        $(document).ready(function(){
+        var userObj, appObj, channelObj;
 
-             console.log('hello='+getLocationParameter("type"));
+        $(document).ready(function(){
+            getUserTable();
+             console.log('hello='+<getLocatio></getLocatio>nParameter("type"));
             //document.location = 'main.html?type='+getLocationParameter("type");
         });
 
-
-
         function getUserTable() {
             $.ajax({
-                url:,
+                url:'http://133.130.113.101:7010/user/customQuery?query=select%20*%20from%20user',
                 type:'get',
                 timeout:1000,
                 dataType:'json',
@@ -68,10 +68,44 @@
                 },
 
                 success:function(obj){
-                    alert('success' + obj);
-                    location.replace("main.html");
+                    alert('success' + obj.result);
+                    userObj = obj;
+
+                    addRow("userTable");
                 }
             });
+        }
+
+        function addRow(tableID) {
+
+            var table = document.getElementById(tableID);
+
+            // to insert a row below the last row.
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = userObj.result.user_no;
+
+            var cell2 = row.insertCell(1);
+            cell2.innerHTML = userObj.result.user_id;
+
+            var cell3 = row.insertCell(2);
+            cell3.innerHTML = userObj.result.user_pw;
+
+            var cell4 = row.insertCell(3);
+            cell4.innerHTML = userObj.result.device_id;
+
+            var cell5 = row.insertCell(4);
+            cell5.innerHTML = userObj.result.gcm_id;
+
+            var cell6 = row.insertCell(5);
+            cell6.innerHTML = userObj.result.join_date;
+
+//            var element1 = document.createElement("input");
+//            element1.type = "checkbox";
+//            element1.name="chkbox[]";
+//            cell1.appendChild(element1);
         }
 
         function getListApp() {
@@ -86,8 +120,8 @@
                 },
 
                 success:function(obj){
-                    alert('success' + obj);
-                    location.replace("main.html");
+                    alert('success' + obj.result_msg);
+                    appObj = obj;
                 }
             });
         }
@@ -104,8 +138,8 @@
                 },
 
                 success:function(obj){
-                    alert('success' + obj);
-                    location.replace("main.html");
+                    alert('success' + obj.result_msg);
+                    channelObj = obj;
                 }
             });
         }
@@ -125,13 +159,8 @@
                     <h2>Users' Tables <small>Manage the user information.</small></h2>
                 </div>
 
-
-                <button class="btn btn-default btn-icon-text waves-effect"><i class="zmdi zmdi-refresh"></i> Sync</button>
-
-                <button class="btn btn-success" onclick="getUserTable()">Update Table</button>
-
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table id="userTable" class="table table-striped">
                         <thead>
                             <tr>
                                 <th>#</th>
