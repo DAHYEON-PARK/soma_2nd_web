@@ -1,0 +1,58 @@
+[
+
+{
+	"icon":"accounts-list-alt",
+	"title":"USER",
+	"url":"crud.html?type=User"
+},
+{
+	"icon":"store",
+	"title":"setting",
+	"url":"crud.html?type=setting"
+},
+{
+	"icon":"account-circle",
+	"title":"session",
+	"url":"crud.html?type=session"
+},
+{
+	"icon":"menu",
+	"title":"notice",
+	"url":"crud.html?type=notice"
+},
+{
+	"icon":"developer-board",
+	"title":"channel user list",
+	"url":"crud.html?type=channel_user_list"
+},
+{
+	"icon":"edit",
+	"title":"channel",
+	"url":"crud.html?type=channel"
+},
+{
+	"icon":"mail-reply",
+	"title":"app user list",
+	"url":"crud.html?type=app_user_list"
+},
+{
+	"icon":"phone",
+	"title":"app",
+	"url":"crud.html?type=app"
+},
+{
+	"icon":"remote-control",
+	"title":"메뉴9",
+	"url":"crud.html?type=Table9"
+},
+{
+	"icon":"seat",
+	"title":"메뉴10",
+	"url":"crud.html?type=Table10"
+},
+{
+	"icon":"settings",
+	"title":"Default",
+	"url":"crud.html"
+}
+]
