@@ -10,6 +10,10 @@ function setUserId(id){
     user_id = id;
 }
 
+function setUserPW(pw){
+    user_pw = pw;
+}
+
 function getLocationParameter( name ){
     name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
     var regexS = "[\\?&]"+name+"=([^&#]*)";

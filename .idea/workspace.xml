@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="198eda66-8fb9-4584-8d94-8801b8c0f0ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bootstrap-growl/bootstrap-growl.min.js" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bootstrap-growl/bootstrap-growl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/crud.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/crud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js" afterPath="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js" />
     </list>
     <ignored path="vertx-examples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,68 +36,82 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.2386363">
-              <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="56" column="37" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
+      <file leaf-file-name="crud.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/crud.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-49.375">
-              <caret line="121" column="48" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.66213924">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+              <folding>
+                <marker date="1446294669000" expanded="true" signature="13453:14574" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13669:14526" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13699:14516" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13709:13853" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13756:13842" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13863:14022" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="13923:14011" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14032:14165" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14070:14154" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14175:14319" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14222:14308" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14329:14506" placeholder="..." />
+                <marker date="1446294669000" expanded="true" signature="14411:14495" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="154.07408">
+              <caret line="11613" column="37" selection-start-line="11613" selection-start-column="37" selection-end-line="11613" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/demo.js">
+      <file leaf-file-name="jquery.nicescroll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/jquery.nicescroll/jquery.nicescroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alert.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/less/inc/alert.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3703704">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crud.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/crud.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="charts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/charts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wraptalk.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -128,12 +145,14 @@
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/main.html" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/table.html" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/Server.java" />
-        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/tables.html" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/kt.js" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js" />
-        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html" />
+        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html" />
         <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html" />
+        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bootstrap-growl/bootstrap-growl.min.js" />
+        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/crud.html" />
+        <option value="$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html" />
       </list>
     </option>
   </component>
@@ -332,48 +351,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vertx-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soma_2nd_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -382,7 +359,16 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vertx-examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,7 +377,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IntelliiJ_Project/vertx-examples" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IntelliiJ_Project/soma_vert.x_simple_chatting" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -600,7 +586,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1637" height="1027" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -610,10 +596,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2855615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2855615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15109718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15109718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -624,7 +611,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -639,7 +625,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2855615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2855615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15109718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -664,86 +650,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="123" selection-start-line="117" selection-start-column="74" selection-end-line="117" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="19" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -785,52 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vertxbus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,14 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="38" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -956,20 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.702797">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/css/app.min.1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33211008">
-          <caret line="0" column="172702" selection-start-line="0" selection-start-column="172699" selection-end-line="0" selection-end-column="172702" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vertxbus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -984,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1000,18 +846,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js">
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.947798">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="7968" selection-start-line="0" selection-start-column="7959" selection-end-line="0" selection-end-column="7968" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645">
+          <caret line="5" column="22505" selection-start-line="5" selection-start-column="22496" selection-end-line="5" selection-end-column="22505" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645">
+          <caret line="5" column="20038" selection-start-line="5" selection-start-column="20029" selection-end-line="5" selection-end-column="20038" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/Waves/dist/waves.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19575857">
+          <caret line="8" column="1826" selection-start-line="8" selection-start-column="1819" selection-end-line="8" selection-end-column="1826" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,27 +910,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/main.html">
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/wraptalk.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.375">
-          <caret line="121" column="48" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/js/crud.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3505843">
+          <caret line="14" column="433" selection-start-line="14" selection-start-column="433" selection-end-line="14" selection-end-column="433" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/less/inc/alert.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3703704">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="154.07408">
+          <caret line="11613" column="37" selection-start-line="11613" selection-start-column="37" selection-end-line="11613" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bower_components/jquery.nicescroll/jquery.nicescroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/vendors/bootstrap-growl/bootstrap-growl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5390625">
+          <caret line="23" column="830" selection-start-line="23" selection-start-column="829" selection-end-line="23" selection-end-column="830" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/css/app.min.1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645">
+          <caret line="0" column="123130" selection-start-line="0" selection-start-column="123121" selection-end-line="0" selection-end-column="123130" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2386363">
-          <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-examples/src/main/java/io/vertx/example/web/chat/webroot/crud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66213924">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <marker date="1446294669000" expanded="true" signature="13453:14574" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13669:14526" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13699:14516" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13709:13853" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13756:13842" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13863:14022" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="13923:14011" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14032:14165" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14070:14154" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14175:14319" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14222:14308" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14329:14506" placeholder="..." />
+            <marker date="1446294669000" expanded="true" signature="14411:14495" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
